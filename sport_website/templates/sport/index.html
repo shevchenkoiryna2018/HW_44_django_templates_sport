@@ -1,39 +1,163 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <!-- ==================== ГОЛОВНА ==================== -->
-    
-    <section class="bg-primary text-white py-5">
+<!-- ==================== ГОЛОВНА ==================== -->
 
-        <div class="container text-center">
+<section class="bg-primary text-white py-5">
 
-            <h1 class="display-4 fw-bold">
-                Ласкаво просимо до Sport Hub!
-            </h1>
+    <div class="container text-center">
 
-            <p class="lead mt-3">
-                Твій інформаційний простір про улюблені види спорту.
-            </p>
+        <h1 class="display-4 fw-bold">
+            Ласкаво просимо до Sport Hub!
+        </h1>
 
-            <p>
-                Футбол, хокей та баскетбол — усе в одному місці.
-            </p>
+        <p class="lead mt-3">
+            Твій інформаційний простір про улюблені види спорту.
+        </p>
+
+        <p>
+            Футбол, хокей та баскетбол — усе в одному місці.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Спортивні розділи
+        </h2>
+
+        <p class="text-muted">
+            Обери свій улюблений вид спорту
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+
+        <!-- ФУТБОЛ -->
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm text-center">
+
+                <div class="card-body p-4">
+
+                    <div class="display-3 mb-3">
+                        ⚽
+                    </div>
+
+                    <h3 class="card-title">
+                        Футбол
+                    </h3>
+
+                    <p class="card-text">
+                        Найпопулярніша командна гра у світі.
+                        Дізнайся більше про правила, команди
+                        та цікаві футбольні факти.
+                    </p>
+
+                    <a href="{% url 'sport:football' %}" class="btn btn-primary">
+                        Детальніше
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </section>
+
+        <!-- ХОКЕЙ -->
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm text-center">
+
+                <div class="card-body p-4">
+
+                    <div class="display-3 mb-3">
+                        🏒
+                    </div>
+
+                    <h3 class="card-title">
+                        Хокей
+                    </h3>
+
+                    <p class="card-text">
+                        Швидкий та видовищний командний спорт.
+                        Дізнайся про особливості хокею,
+                        правила та цікаві факти.
+                    </p>
+
+                    <a href="{% url 'sport:hockey' %}" class="btn btn-primary">
+                        Детальніше
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
 
 
-    <section class="container py-5">
+        <!-- БАСКЕТБОЛ -->
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm text-center">
+
+                <div class="card-body p-4">
+
+                    <div class="display-3 mb-3">
+                        🏀
+                    </div>
+
+                    <h3 class="card-title">
+                        Баскетбол
+                    </h3>
+
+                    <p class="card-text">
+                        Динамічна гра, де важливі швидкість,
+                        точність та командна взаємодія.
+                    </p>
+
+                    <a href="{% url 'sport:basketball' %}" class="btn btn-primary">
+                        Детальніше
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================== СПОРТИВНИЙ ДАЙДЖЕСТ ==================== -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
 
         <div class="text-center mb-5">
 
             <h2 class="fw-bold">
-                Спортивні розділи
+                Спортивний дайджест
             </h2>
 
             <p class="text-muted">
-                Обери свій улюблений вид спорту
+                Коротко про наші види спорту
             </p>
 
         </div>
@@ -42,31 +166,22 @@
         <div class="row g-4">
 
 
-            <!-- ФУТБОЛ -->
-
             <div class="col-md-4">
 
-                <div class="card h-100 shadow-sm text-center">
+                <div class="card h-100">
 
-                    <div class="card-body p-4">
+                    <div class="card-body">
 
-                        <div class="display-3 mb-3">
-                            ⚽
-                        </div>
-
-                        <h3 class="card-title">
-                            Футбол
-                        </h3>
+                        <h4 class="card-title">
+                            ⚽ Футбол
+                        </h4>
 
                         <p class="card-text">
-                            Найпопулярніша командна гра у світі.
-                            Дізнайся більше про правила, команди
-                            та цікаві футбольні факти.
+                            Футбол об'єднує мільйони вболівальників
+                            по всьому світу. Команди змагаються
+                            за перемогу, забиваючи м'яч у ворота
+                            суперника.
                         </p>
-
-                        <a href="{% url 'sport:football' %}" class="btn btn-primary">
-                            Детальніше
-                        </a>
 
                     </div>
 
@@ -75,31 +190,21 @@
             </div>
 
 
-            <!-- ХОКЕЙ -->
-
             <div class="col-md-4">
 
-                <div class="card h-100 shadow-sm text-center">
+                <div class="card h-100">
 
-                    <div class="card-body p-4">
+                    <div class="card-body">
 
-                        <div class="display-3 mb-3">
-                            🏒
-                        </div>
-
-                        <h3 class="card-title">
-                            Хокей
-                        </h3>
+                        <h4 class="card-title">
+                            🏒 Хокей
+                        </h4>
 
                         <p class="card-text">
-                            Швидкий та видовищний командний спорт.
-                            Дізнайся про особливості хокею,
-                            правила та цікаві факти.
+                            Хокей відомий своєю швидкістю,
+                            командною грою та яскравими моментами.
+                            Матчі проходять на льодовому майданчику.
                         </p>
-
-                        <a href="{% url 'sport:hockey' %}" class="btn btn-primary">
-                            Детальніше
-                        </a>
 
                     </div>
 
@@ -108,30 +213,21 @@
             </div>
 
 
-            <!-- БАСКЕТБОЛ -->
-
             <div class="col-md-4">
 
-                <div class="card h-100 shadow-sm text-center">
+                <div class="card h-100">
 
-                    <div class="card-body p-4">
+                    <div class="card-body">
 
-                        <div class="display-3 mb-3">
-                            🏀
-                        </div>
-
-                        <h3 class="card-title">
-                            Баскетбол
-                        </h3>
+                        <h4 class="card-title">
+                            🏀 Баскетбол
+                        </h4>
 
                         <p class="card-text">
-                            Динамічна гра, де важливі швидкість,
-                            точність та командна взаємодія.
+                            Баскетбол поєднує швидкість, точність
+                            та тактику. Гравці намагаються набрати
+                            якомога більше очок для своєї команди.
                         </p>
-
-                        <a href="{% url 'sport:basketball' %}" class="btn btn-primary">
-                            Детальніше
-                        </a>
 
                     </div>
 
@@ -141,104 +237,8 @@
 
         </div>
 
-    </section>
+    </div>
 
-
-    <!-- ==================== СПОРТИВНИЙ ДАЙДЖЕСТ ==================== -->
-
-    <section class="bg-light py-5">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <h2 class="fw-bold">
-                    Спортивний дайджест
-                </h2>
-
-                <p class="text-muted">
-                    Коротко про наші види спорту
-                </p>
-
-            </div>
-
-
-            <div class="row g-4">
-
-
-                <div class="col-md-4">
-
-                    <div class="card h-100">
-
-                        <div class="card-body">
-
-                            <h4 class="card-title">
-                                ⚽ Футбол
-                            </h4>
-
-                            <p class="card-text">
-                                Футбол об'єднує мільйони вболівальників
-                                по всьому світу. Команди змагаються
-                                за перемогу, забиваючи м'яч у ворота
-                                суперника.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4">
-
-                    <div class="card h-100">
-
-                        <div class="card-body">
-
-                            <h4 class="card-title">
-                                🏒 Хокей
-                            </h4>
-
-                            <p class="card-text">
-                                Хокей відомий своєю швидкістю,
-                                командною грою та яскравими моментами.
-                                Матчі проходять на льодовому майданчику.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-4">
-
-                    <div class="card h-100">
-
-                        <div class="card-body">
-
-                            <h4 class="card-title">
-                                🏀 Баскетбол
-                            </h4>
-
-                            <p class="card-text">
-                                Баскетбол поєднує швидкість, точність
-                                та тактику. Гравці намагаються набрати
-                                якомога більше очок для своєї команди.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+</section>
 
 {% endblock %}
